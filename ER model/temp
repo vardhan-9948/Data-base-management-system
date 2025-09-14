@@ -1,0 +1,54 @@
+#Task(1) 
+CONCEPTUAL DESIGN USING ER MODEL
+#Aim:
+college management system using draw.io
+#Tools Required:
+https://draw.io
+#Steps involved in creating ER Diagram
+Step 1: Problem Understanding & Requirement Analysis
+Analyze the real_world appliction: College Management System
+Understanding the domine: Students,Faculty,Course,Department,Exams,Results,Library.
+Step 2: Identify Major Entities
+Student
+Faculty
+Course
+Department
+Exam
+Result
+Library
+Step 3: Identify Attributes for Each Entity
+Entity        Attributes
+Student       StudentID(PK),Name,Age,Gender,Phone,Address,DepartmentID(FK)
+Faculty       Faculty(pk),Name,Qualification,ContactNo,DepartmentID(FK)
+Course        CourseID(PK),Name,Credits,DepartmentID(FK)
+Department    DepartmentID(PK),Name,Location
+Exam          ExamID(PK),CourseID(FK),StudentID(FK),Marks,Grade.
+Library       BookID(PK),Title,Author,StudentID(FK,if issued)
+Step 4: Define relationships between entities
+A Department offers many Course.
+A Student belongs to one Department.
+A Faculty belongs to one Department.
+A Faculty Teaches many Courses.
+A Student enrolls in many Courses.
+A Course has many Exams.
+A Student gives many Exams,and each exam generates one Result.
+A student can borrow many books from the library.
+step 5: Draw ER Diagram using draw.io
+Rectangles -> Entities(Student,Faculty,etc.)
+Ellipses -> Attributes(Name,Age,etc.)
+Diamonds -> Relationships(Enrolls,Teaches,Issues,etc.)
+Connect using lines with cardinalities(1:N,M:N).
+Underline Primary Keys,Mark FKs.
+#Input for the ER Design
+Real-time College System Scenario
+User Requirements (student Management,Faculty Scheduling,Exams,Library)
+Database Design Rules 
+(Entity-Attribute-Relationship identification)
+#Output
+Entity Relationship Diagram (ERO) that clearly shows:
+All identified entities with attributes
+All relationships with appropriate cardinalities.
+Foreign Keys and keys marked appropriately
+#Result
+conceptual design using ER model for college
+management system using draw.io has been implemented successfully and task is  done
